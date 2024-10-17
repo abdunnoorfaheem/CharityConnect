@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <header class="bg-[#F9F7F3] ">
+        <!-- nav section start -->
+        <nav class="md:flex justify-between items-center h-[130px]">
+            <a href="index.html" class="bg-[#B4F461] ml-32 px-7 py-3 rounded-lg text-[#111111] font-bold">Home</a>
+            <div class="flex items-center"><img src="img/logo.png" alt="">
+                <h2 class="ml-4 text-xl text-[#111111] font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="mr-32 flex items-center">
+                <img src="img/coin.png" alt="" class="">
+                <h2 class="ml-3 text-[#111111B3] font-bold" id="">5500 BDT</h2>
+            </div>
+        </nav>
+        <!-- nav section End -->
+
+    </header>
+    <main class="bg-[#FFFFFF] h-[100vh]">
+
+        <div class="join join-vertical w-full p-12 text-black ">
+            <h1 class="text-2xl text-black font-bold  mb-6">Important FFQ <i class="fa-solid fa-question"></i></h1>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is document object model(DOM)?</div>
+                <div class="collapse-content">
+                    <p>Introduction Document Object Model (DOM) For Web Documents It describes the structure of a document (whether HTML or XML) as an object tree. All content within the document becomes a node in this tree and scripts (usually JavaScript)
+                        can then alter its appearance, or manipulate it as necessary.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from DOM?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) offers a lot of ways to select elements in a web document. Here are the primary methods: getElementById — Like its name, it gets (by some way) an element with unique id. It directly returns the element.
+                        getElementsByClassName: This method returns object given through a class name. The getElementsByClassName method returns a live HTMLCollection, what we will mean by the time this post comes to an end is that if there are changes
+                        in the document and you try fetching these elements again it ll be handled automatically over deallocating memory. getElementsByTagName: This method identifies all elements of a specified tag type. Live HTMLCollection returned
+                        from getElementsByClassName. querySelector: As the name suggests, this method gets a single element with CSS selector. It offers greater diversity in selection criteria. querySelectorAll: This function is used to return a list
+                        of an element which holds class id or any other attributes with the help of CSS selector. A static NodeList, which does not update as the document changes</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM,and why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation is a convention of handling events in DOM where you bind an event to the parent element and all its children inherit that particular listener. The parent listener listens to events triggered by its child elements.
+                        Performance Gain: Always attaching listeners on each child can be bad for the application as it increases memory usage so one listener per type to a parent is better. Dynamic Elements: If new child elements are added dynamically
+                        (e.g. via AJAX or user interactions), they automatically inherit the parent event listenser and so you don't need to add listeners for them again Cleaner and More Readable Code: Your code may look cleaner, as you have less event
+                        listeners to care for. Consistency: Because you are addressing events at the single place,so it make sure that same logic will be applied to all relevant child elements.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+                <input type="radio" name="my-accordion-4" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                <div class="collapse-content">
+                    <p>There are methods and properties to modify the attributes,styles of an element in the DOM.Set attributes by name getAttribute: Returns the value of a specified attribute on an element (such as class, id or custom attributes). removeAttribute:
+                        It is used to remove the specified attribute from an element, and if we use this method it means that at run time its removing with DOM itself. Better property hiding: Certain properties you can access directly as a custom element
+                        property (like src, href or className ) rather than HTML attribute which makes your life easier. Manipulating Styles Inline styles are directly possible with style property Encapsulating styles which enables you to play with the
+                        color, backgroundColor, fontSize and many other CSS properties individually. CSS classes: The classList property contains the on (to add) and togg le (to toggle whether a CSS is added or not) methods for working with CSS classes
+                        in an element. add: Adds specified class to the element. remove: It removes a specific class from the element. toggle: Adds or removes a class based on its presence. cssText Property: Using this property, you can combine several
+                        CSS styles as a single string and assign them to one or more stylesheet.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
