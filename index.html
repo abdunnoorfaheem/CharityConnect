@@ -4,16 +4,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
 
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+
+    <header class="bg-[#F9F7F3] ">
+        <!-- nav section start -->
+        <nav class="flex justify-between items-center h-[130px]">
+            <a href="blog.html" class="bg-[#B4F461] ml-32 px-7 py-3 rounded-lg text-[#111111] font-bold">Blog</a>
+            <div class="flex items-center"><img src="img/logo.png" alt="">
+                <h2 class="ml-4 text-xl text-[#111111] font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="mr-32 flex items-center">
+                <img src="img/coin.png" alt="" class="">
+                <h2 class="ml-3 text-[#111111B3] font-bold">5500 BDT</h2>
+            </div>
+        </nav>
+        <!-- nav section End -->
+
+    </header>
+
+    <main>
+        <!-- Button Section Start -->
+
+        <section class="flex justify-center items-center">
+            <button>Donation</button>
+            <button>History</button>
+        </section>
+
+        <!-- Button Section End -->
+    </main>
+
+    <footer></footer>
+
 
     <script src="js/index.js"></script>
 </body>
