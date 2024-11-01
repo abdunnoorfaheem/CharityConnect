@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+</head>
+
+<body>
+    <header class="bg-[#F9F7F3] ">
+        <!-- nav section start -->
+        <nav class="md:flex justify-between items-center h-[130px]">
+            <a href="index.html" class="bg-[#B4F461] ml-32 px-7 py-3 rounded-lg text-[#111111] font-bold">Home</a>
+            <div class="flex items-center"><img src="img/logo.png" alt="">
+                <h2 class="ml-4 text-xl text-[#111111] font-bold">Donate Bangladesh</h2>
+            </div>
+            <div class="mr-32 flex items-center">
+                <img src="img/coin.png" alt="" class="">
+                <h2 class="ml-3 text-[#111111B3] font-bold" id="">5500 BDT</h2>
+            </div>
+        </nav>
+        <!-- nav section End -->
+
+    </header>
+    <main class="bg-[#F9F7F3] h-[100vh]" id="main-id">
+        <section class="md:flex justify-center items-center ">
+            <a href="index.html" class="bg-[#B4F461]  px-8 py-4 rounded-lg text-[#111111] font-bold mt-[80px]">Donation</a>
+            <a href="history.html" class="border-2 px-8 py-4 rounded-lg font-bold ml-3 mt-[80px]">History</a>
+        </section>
+        <div id="historyId"></div>
+    </main>
+
+    <script src="js/function.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
