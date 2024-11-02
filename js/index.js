@@ -38,9 +38,19 @@ document.getElementById("donate-noa").addEventListener("click", function(event) 
     let date = new Date();
     p.innerText = `Add Money : ${addMoney} New  Balance is ${sumDonation} Date: ${date.toLocaleString()}`;
 
+    console.log(p);
 
-    let find = document.getElementById("main-id");
-    console.log(find.innerText);
+
+    document.getElementById(sec).appendChild(p);
+
+
+
+
+
+
+
+
+
 
 
 
